@@ -3,8 +3,19 @@
 {% block title %}Netflix API{% endblock %}
 
 {% block body %}
+<main class="px-4 pt-12">
+    <h1 class="text-4xl font-bold pb-8">Netflix API</h1>
 
-<div class="example-wrapper">
-    <h1>Netflix API</h1>
-</div>
+    <div class="flex gap-4 flex-wrap">
+        {% for audio in audiovisual %}
+            <div class=" bg-gray-200 p-4 rounded">
+                <h2 class="text-xl pb-2">Nom : {{audio.Nom}}<h2>
+                <p class="pb-2">Synopsis : {{audio.Synopsis}}</p>
+                <p class="pb-2">Type : {{audio.Type}}</p>
+                <p class="">Date de parution : {{audio.Date |date('d-m-Y')}}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+<main/>
 {% endblock %}

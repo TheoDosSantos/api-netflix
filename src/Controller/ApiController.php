@@ -16,9 +16,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class ApiController extends AbstractController
 {
     #[Route('/', name: 'api')]
-    public function index(): Response
+    public function index(AudiovisualRepository $audioRepo): Response
     {
-        return $this->render('api/index.html.twig');
+        $audio = $audioRepo->findAll();
+        return $this->render('api/index.html.twig', [
+            'audiovisual'     => $audio
+        ]);
     }
 
     #[Route('/create', name: 'create')]
