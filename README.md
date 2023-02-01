@@ -23,8 +23,8 @@ Comment lancer le projet ?
         "Date" : "1954-07-17"
     }
 
-  ## 8. On peut ainsi créer plusieurs entités de la sorte.
+  ## 8. On peut ainsi créer plusieurs entitées de la sorte.
 
-  ## 9. Une fois ces entités créer, nous pouvons les récuperer via Postman en méthode GET à l'url "http://127.0.0.1:8000/getall". Si nous voulons récupérer une production audiovisuelle en particulier, toujours en GET il faut s'adresser à l'url "http://127.0.0.1:8000/get(id)"
+  ## 9. Une fois ces entitées crées, nous pouvons les récuperer via Postman en méthode GET à l'url "http://127.0.0.1:8000/getall". Si nous voulons récupérer une production audiovisuelle en particulier, toujours en GET sur Postman il faut s'adresser à l'url "http://127.0.0.1:8000/get/(id)"
 
-  ## 10. De Maintenant à l'url "http://localhost:8000/" vous pouvez y voir s'afficher les différents films / séries ajouté depuis Postman 
+  ## 10. Maintenant à l'url "http://localhost:8000/" vous pouvez y voir s'afficher les différents films / séries ajouté depuis Postman 
